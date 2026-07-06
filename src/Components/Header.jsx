@@ -22,13 +22,12 @@ const Header = () => {
   const navItems = [
     { name: "Accueil", path: "/" },
     { name: "A propos de nous", path: "/about-us" },
-    { name: "Infos pratiques", path: "/infos-pratiques" },
-    { name: "Nos créneaux", path: "/skill-development" },
-    { name: "S'inscrie", path: "/health-wellness" },
-    // { name: "Testimonials", path: "/testimonials" },
-    // { name: "Events & Activities", path: "/event-activities" },
-    // { name: "Contact Us", path: "/contact-us" },
-    { name: "Faire un don", path: "/donation" },
+    { name: "Créneaux et gymnases", path: "/creneaux-gymnases" },
+    { name: "Formules et tarifs", path: "/formules-tarifs" },
+    { name: "S'inscrire", path: "/inscription" },
+    { name: "Evénements", path: "/event-activities" },
+    { name: "Nous contacter", path: "/contact" },
+    { name: "Faire un don", path: "/don" },
   ];
 
 

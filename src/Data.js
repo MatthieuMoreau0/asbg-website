@@ -1,6 +1,6 @@
 import card1Img from './Images/asbg1.avif';
 import card2Img from './Images/asbg2.avif';
-import card3Img from './Images/asbg3.avif';
+import card6Img from './Images/asbg6.jpg';
 
 export const approachCards = [
   {
@@ -16,7 +16,7 @@ export const approachCards = [
       "Affiliée à la FFBaD, l'ASBG participe aux interclubs, tournois fédéraux et compétitions LGBT+ en France et à l'étranger. La performance et l'ambition sont au cœur de notre projet sportif."
   },
   {
-    img: card3Img,
+    img: card6Img,
     title: "Convivial",
     text:
       "Le badminton c'est bien, mais les moments partagés en dehors du terrain, c'est tout aussi important. L'ASBG c'est avant tout une communauté soudée et bienveillante."

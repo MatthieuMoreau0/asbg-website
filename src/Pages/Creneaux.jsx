@@ -71,8 +71,8 @@ const gymnases = [
 ];
 
 const tagLabels = {
-    "entrainement": { label: "Entraînement", color: "#91adc6" },
-    "jeu-libre": { label: "Jeu libre", color: "#97c0c0" },
+    "entrainement": { label: "Entraînement", color: "#008ACD" },
+    "jeu-libre": { label: "Jeu libre", color: "#7D71B2" },
     "interclubs": { label: "Interclubs", color: "#FEEB0A" },
 };
 

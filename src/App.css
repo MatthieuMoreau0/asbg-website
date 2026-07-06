@@ -3,10 +3,8 @@
   --baloo-font: "Baloo 2", cursive;
   --orange-clr: #ed6956;
   --yellow-asbg: #FEEB0A;
-  --yellow-clr: #fbbd4c;
-  --pink-clr: #f3a9b0;
-  --blue-clr: #91adc6;
-  --mint-clr: #97c0c0;
+  --blue-clr: #7D71B2;
+  --mint-clr: #008ACD;
 }
 
 * {
@@ -497,7 +495,12 @@ body {
   width: 100%;
   height: 240px;
   object-fit: cover;
+  object-position: center center;
   display: block;
+}
+
+.approach-card:first-child .approach-img img {
+  object-position: center 20%;
 }
 
 .approach-card h3 {

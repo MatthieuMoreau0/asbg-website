@@ -145,7 +145,7 @@ const Home = () => {
       C60 160 65 130 120 150
       Z"
                 fill="#ffffff"
-                stroke="#91adc6"
+                stroke="#008ACD"
                 strokeWidth="3"
               />
             </motion.svg>
@@ -172,7 +172,7 @@ const Home = () => {
       C80 195 90 160 160 180
       Z"
                 fill="#ffffff"
-                stroke="#91adc6"
+                stroke="#008ACD"
                 strokeWidth="3"
               />
             </motion.svg>
