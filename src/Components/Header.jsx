@@ -141,13 +141,13 @@ const Header = () => {
               transition={{ duration: 0.3, ease: "easeInOut" }}
             >
               <Link to="/">
-                <motion.div
+                <motion.img
+                  src={`${process.env.PUBLIC_URL}/asbg_logo.png`}
+                  alt="ASBG Logo"
                   className="logo"
                   whileHover={{ scale: 1.05 }}
                   transition={{ type: "spring", stiffness: 300 }}
-                >
-                  Edu<span>Hub</span>
-                </motion.div>
+                />
               </Link>
               <nav className="nav-links">
                 {navItems.map((item, i) => (

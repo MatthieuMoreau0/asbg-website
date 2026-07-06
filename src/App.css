@@ -684,3 +684,409 @@ body {
   text-decoration: none;
   color: #fff;
 }
+
+/* ── ABOUT PAGE ─────────────────────────────────────────── */
+.about-hero {
+  padding: 10rem 2rem 4rem;
+  text-align: center;
+  background: linear-gradient(135deg, #fff9e6 0%, #e8f4f8 100%);
+}
+
+.about-hero h1 {
+  font-family: var(--baloo-font);
+  font-size: 2.2rem;
+  max-width: 800px;
+  margin: 0.5rem auto 0;
+  color: #222;
+}
+
+.about-section {
+  padding: 4rem 2rem 6rem;
+}
+
+.about-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.about-values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.about-value-card {
+  flex: 1 1 120px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+  padding: 1.2rem 1rem;
+  text-align: center;
+  cursor: default;
+}
+
+.about-value-emoji {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.about-value-card p {
+  margin: 0;
+  font-family: var(--baloo-font);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.about-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.about-highlights li {
+  font-family: var(--roboto-font);
+  font-size: 1rem;
+  color: #444;
+  background: #f9f9f9;
+  border-left: 4px solid var(--yellow-asbg);
+  padding: 0.75rem 1rem;
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+}
+
+.about-objective {
+  background: linear-gradient(135deg, #fff9e6, #e8f4f8);
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  margin-top: 2rem;
+}
+
+.about-objective p {
+  font-family: var(--roboto-font);
+  font-size: 1.05rem;
+  color: #333;
+  margin: 0;
+  line-height: 1.7;
+}
+
+/* ── HOME GALLERY ───────────────────────────────────────── */
+.gallery-section {
+  padding: 4rem 2rem 6rem;
+  background: #f8f9fc;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.gallery-item {
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.06);
+}
+
+@media (max-width: 640px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── PRICING PAGE ───────────────────────────────────────── */
+.pricing-section {
+  padding: 3rem 2rem 6rem;
+}
+
+.pricing-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.pricing-cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pricing-card {
+  flex: 1 1 320px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pricing-card--highlight {
+  border: 3px solid var(--yellow-asbg);
+  background: linear-gradient(160deg, #fffef0 0%, #fff 100%);
+}
+
+.pricing-card h3 {
+  font-family: var(--baloo-font);
+  font-size: 1.25rem;
+  color: #222;
+  margin: 0;
+}
+
+.pricing-price {
+  font-family: var(--baloo-font);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--orange-clr);
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.pricing-features li {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+  font-family: var(--roboto-font);
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.pricing-features li.excluded {
+  opacity: 0.4;
+}
+
+.pricing-check {
+  font-weight: 700;
+  min-width: 16px;
+  color: var(--orange-clr);
+}
+
+.pricing-features li.excluded .pricing-check {
+  color: #aaa;
+}
+
+.pricing-detail {
+  font-size: 0.85rem;
+  color: #666;
+  white-space: pre-line;
+}
+
+/* ── INSCRIPTION PAGE ───────────────────────────────────── */
+.inscription-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.inscription-card {
+  flex: 1 1 220px;
+  max-width: 260px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.07);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  cursor: default;
+}
+
+.inscription-emoji {
+  font-size: 2.2rem;
+}
+
+.inscription-card h3 {
+  font-family: var(--baloo-font);
+  font-size: 1rem;
+  color: #222;
+  margin: 0;
+}
+
+.inscription-subtitle {
+  font-family: var(--roboto-font);
+  font-size: 0.85rem;
+  color: #888;
+  font-style: italic;
+  margin: 0;
+}
+
+.inscription-status {
+  margin-top: 0.5rem;
+  background: var(--yellow-asbg);
+  color: #222;
+  font-family: var(--baloo-font);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+}
+
+.inscription-deadline {
+  font-family: var(--roboto-font);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--orange-clr);
+  margin: 0;
+}
+
+.inscription-note {
+  font-family: var(--roboto-font);
+  font-size: 0.82rem;
+  color: #999;
+  font-style: italic;
+  margin: 0;
+}
+
+/* ── CRÉNEAUX PAGE ──────────────────────────────────────── */
+.creneaux-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.creneau-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.07);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.creneau-card h3 {
+  font-family: var(--baloo-font);
+  font-size: 1.1rem;
+  color: #222;
+  margin: 0;
+}
+
+.creneau-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.creneau-tag {
+  font-family: var(--baloo-font);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #222;
+  padding: 0.2rem 0.65rem;
+  border-radius: 20px;
+}
+
+.creneau-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-family: var(--roboto-font);
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.creneau-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #aaa;
+}
+
+.creneau-metro {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-top: 0.1rem;
+}
+
+.metro-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.metro-line {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--baloo-font);
+  font-weight: 800;
+  font-size: 0.8rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.metro-prefix {
+  font-size: 0.55rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+.metro-line--rer {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  font-size: 1rem;
+}
+
+.metro-svg {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+
+.creneaux-map {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+}
+
+.creneaux-map iframe {
+  width: 100%;
+  height: 480px;
+  border: none;
+  display: block;
+}

@@ -1,20 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
+import { FiMail, FiMapPin } from "react-icons/fi";
 import { FaFacebookF, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   const menuItems = [
-  { name: "Home", link: "/" },
-  { name: "About Us", link: "/about-us" },
-  { name: "Democratic Education", link: "/democratic-education" },
-  { name: "Skill Development", link: "/skill-development" },
-  { name: "Health & Wellness", link: "/health-wellness" },
-  { name: "Contact Us", link: "/contact-us" },
-  { name: "Privacy Policy", link: "/privacy-policy" },
-  { name: "Terms & Conditions", link: "/terms-conditions" },
-];
+    { name: "Accueil", link: "/" },
+    { name: "À propos de nous", link: "/about-us" },
+    { name: "Infos pratiques", link: "/infos-pratiques" },
+    { name: "Nos créneaux", link: "/skill-development" },
+    { name: "S'inscrire", link: "/health-wellness" },
+    { name: "Faire un don", link: "/donation" },
+    { name: "Politique de confidentialité", link: "/privacy-policy" },
+    { name: "CGU", link: "/terms-conditions" },
+  ];
   return (
     <footer className="footer-section">
 
@@ -28,17 +28,15 @@ const Footer = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <motion.div
-                  className="logo"
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ type: "spring", stiffness: 300 }}
-                >
-                   EduHub
-                </motion.div>
+          <motion.img
+            src={`${process.env.PUBLIC_URL}/asbg_logo.png`}
+            alt="ASBG Logo"
+            className="logo"
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          />
           <p>
-            Pioneering Progressive Education and Holistic Development in the
-            culturally rich and vibrant landscape of Kutch, EduHub
-            stands as a beacon of transformative learning.
+            Association Sportive des Badistes Givrés — association LGBT+ de badminton affiliée à la Fédération Française de Badminton (FFBaD). Fondée en 2017, plus de 160 membres.
           </p>
 
           <motion.div
@@ -48,12 +46,12 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.3 }}
           >
-            <motion.a  href="https://www.facebook.com"
-  target="_blank" whileHover={{ scale: 1.2, y: -2 }} transition={{ type: "spring", stiffness: 300 }}>
+            <motion.a href="https://www.facebook.com/ASBGParis"
+              target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2, y: -2 }} transition={{ type: "spring", stiffness: 300 }}>
               <FaFacebookF />
             </motion.a>
-            <motion.a  href="https://www.youtube.com"
-  target="_blank" whileHover={{ scale: 1.2, y: -2 }} transition={{ type: "spring", stiffness: 300 }}>
+            <motion.a href="https://www.youtube.com"
+              target="_blank" rel="noopener noreferrer" whileHover={{ scale: 1.2, y: -2 }} transition={{ type: "spring", stiffness: 300 }}>
               <FaYoutube />
             </motion.a>
           </motion.div>
@@ -69,21 +67,21 @@ const Footer = () => {
         >
           <h3>Useful Links</h3>
           <ul>
-  {menuItems.map((item, i) => (
-    <motion.li
-      key={i}
-      whileHover={{ x: 5, scale: 1.05 }}
-      transition={{ type: "spring", stiffness: 200 }}
-    >
-      <Link
-        to={item.link}
-        style={{ textDecoration: "none", color: "inherit" }}
-      >
-        → {item.name}
-      </Link>
-    </motion.li>
-  ))}
-</ul>
+            {menuItems.map((item, i) => (
+              <motion.li
+                key={i}
+                whileHover={{ x: 5, scale: 1.05 }}
+                transition={{ type: "spring", stiffness: 200 }}
+              >
+                <Link
+                  to={item.link}
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  → {item.name}
+                </Link>
+              </motion.li>
+            ))}
+          </ul>
         </motion.div>
 
         {/* COLUMN 3 */}
@@ -94,25 +92,16 @@ const Footer = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <h3>Contact Info</h3>
+          <h3>Contact</h3>
           <ul className="footer-contact">
             <li>
-  <FiMapPin className="location-icon" />
-  <span>
-    EduHub Learning Centre <br />
-    Managed by EduHub Education Trust (Reg. No. E-1234/KUTCH) <br />
-    Sector 12, Greenfield Road, Near Sunrise Park
-  Bhuj-Kutch, Gujarat – 370001
-  </span>
-</li>
-
-            <a href="tel:+919000012345"><li>
-              <FiPhone /> +91 90000 12345
-            </li></a>
-            <a href="mailto:eduhub@gmail.com">
-            <li>
-              <FiMail /> eduhub@gmail.com
+              <FiMapPin className="location-icon" />
+              <span>Paris, France</span>
             </li>
+            <a href="mailto:contact@asbg75.com">
+              <li>
+                <FiMail /> contact@asbg75.com
+              </li>
             </a>
           </ul>
         </motion.div>
@@ -125,10 +114,10 @@ const Footer = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          <h3>Visit Us</h3>
+          <h3>Nous retrouver</h3>
           <iframe
             title="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58652.60249981221!2d69.62772048187773!3d23.25081293927736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3950e209000b6f17%3A0x7077f358af0774a6!2sBhuj%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1769748044031!5m2!1sen!2sin" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83999.06346827001!2d2.2769952!3d48.8588897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr"
             loading="lazy"
           ></iframe>
         </motion.div>
@@ -143,13 +132,13 @@ const Footer = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 0.4 }}
       >
-        <p>Copyright © 2026 EduHub. All Rights Reserved.</p>
+        <p>Copyright © 2025 ASBG — Association Sportive des Badistes Givrés. Tous droits réservés.</p>
       </motion.div>
 
       {/* CLOUD SHAPES */}
       <motion.div
         className="footer-cloud cloud-left"
-        animate={{ x: [0, 20, 0], y: [0, -5, 0] }} 
+        animate={{ x: [0, 20, 0], y: [0, -5, 0] }}
         transition={{
           duration: 10,
           repeat: Infinity,
@@ -168,7 +157,7 @@ const Footer = () => {
 
       <motion.div
         className="footer-cloud cloud-right"
-        animate={{ x: [0, -20, 0], y: [0, 5, 0] }} 
+        animate={{ x: [0, -20, 0], y: [0, 5, 0] }}
         transition={{
           duration: 12,
           repeat: Infinity,
