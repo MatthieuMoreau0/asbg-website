@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/asbg-website/static/css/main.05381b5d.css",
-    "main.js": "/asbg-website/static/js/main.7daeaedf.js",
+    "main.js": "/asbg-website/static/js/main.c832eb42.js",
     "static/js/453.626c803f.chunk.js": "/asbg-website/static/js/453.626c803f.chunk.js",
     "static/media/hero-img.webp": "/asbg-website/static/media/hero-img.57dfacde8518f7160b32.webp",
     "static/media/welcome-img.webp": "/asbg-website/static/media/welcome-img.8217de66de5e5c33603c.webp",
@@ -106,11 +106,11 @@
     "static/media/roboto-greek-ext-300-normal.woff": "/asbg-website/static/media/roboto-greek-ext-300-normal.f9bcba068dd8c29805b0.woff",
     "index.html": "/asbg-website/index.html",
     "main.05381b5d.css.map": "/asbg-website/static/css/main.05381b5d.css.map",
-    "main.7daeaedf.js.map": "/asbg-website/static/js/main.7daeaedf.js.map",
+    "main.c832eb42.js.map": "/asbg-website/static/js/main.c832eb42.js.map",
     "453.626c803f.chunk.js.map": "/asbg-website/static/js/453.626c803f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.05381b5d.css",
-    "static/js/main.7daeaedf.js"
+    "static/js/main.c832eb42.js"
   ]
 }
