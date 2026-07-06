@@ -19,7 +19,7 @@ import TermsConditions from './Pages/TermsConditions';
 function App() {
   return (
    <>
-   <BrowserRouter>
+   <BrowserRouter basename={process.env.PUBLIC_URL}>
      <ScrollToTop />
      <Header />
       <Routes>

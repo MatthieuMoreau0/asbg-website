@@ -1,7 +1,8 @@
 {
-  "name": "charity-based-template",
+  "name": "asbg-website",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://matthieumoreau0.github.io/asbg-website",
   "dependencies": {
     "@fontsource/baloo-2": "^5.2.7",
     "@fontsource/roboto": "^5.2.9",

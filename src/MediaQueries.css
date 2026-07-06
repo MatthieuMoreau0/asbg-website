@@ -276,8 +276,8 @@
     padding: 1rem 2rem;
   }
 
-  .logo img {
-    height: 42px;
+  .logo {
+    height: 64px;
   }
 
   .sidebar {
