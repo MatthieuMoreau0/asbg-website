@@ -1,6 +1,26 @@
 /**CORE LIBRARIES IMPORT */
 import React from "react";
 import { motion } from "framer-motion";
+import asbg1 from "../Images/asbg1.avif";
+import asbg2 from "../Images/asbg2.avif";
+import asbg3 from "../Images/asbg3.avif";
+import asbg4 from "../Images/asbg4.avif";
+
+import peng from "../Images/Peng.jpg";
+import caro from "../Images/Caro.jpg";
+import dara from "../Images/Dara.png";
+
+import didier from "../Images/Didier.png";
+import flo from "../Images/Flo.jpg";
+import hyacinthe from "../Images/Hyacinthe.jpg";
+
+import jeanne from "../Images/Jeanne.jpg";
+import jordan from "../Images/Jordan.jpg";
+import matthieu from "../Images/Matthieu.jpg";
+
+import melanie from "../Images/Melanie.jpg";
+import myriam from "../Images/Myriam.jpg";
+import raph from "../Images/Raph.jpg";
 
 const fadeUp = {
     hidden: { opacity: 0, y: 30 },
@@ -27,20 +47,28 @@ const values = [
     { emoji: "🚀", label: "Dépassement de soi" },
 ];
 
+const councilMembers = [
+    { name: "Peng", role: "Président", image: peng },
+    { name: "Dara", role: "Secrétaire", image: dara },
+    { name: "Raphael", role: "Trésorier", image: raph },
+
+    { name: "Myriam", role: "Vice-Présidente", image: myriam },
+    { name: "Hyacinthe", role: "Vice-Secrétaire", image: hyacinthe },
+    { name: "Jordan", role: "Vice-Trésorier", image: jordan },
+    { name: "Caroline", role: "Administrateur", image: caro },
+    { name: "Didier", role: "Administrateur", image: didier },
+    { name: "Flo", role: "Administratrice", image: flo },
+    { name: "Jeanne", role: "Administratrice", image: jeanne },
+
+    { name: "Matthieu", role: "Administrateur", image: matthieu },
+    { name: "Mélanie", role: "Administratrice", image: melanie },
+];
+
 const About = () => {
     return (
         <>
             {/* HERO BANNER */}
             <section className="about-hero">
-                <motion.p
-                    className="section-subheading"
-                    variants={fadeUp}
-                    initial="hidden"
-                    animate="visible"
-                    custom={0}
-                >
-                    À propos
-                </motion.p>
                 <motion.h1
                     variants={fadeUp}
                     initial="hidden"
@@ -64,18 +92,7 @@ const About = () => {
                         viewport={{ once: true }}
                         custom={0}
                     >
-                        Créée le <strong>14 mars 2017</strong>, l'Association Sportive des Badistes Givrés (ASBG) est une association <strong>LGBT+ de badminton</strong>, affiliée à la <strong>Fédération Française de Badminton (FFBaD)</strong>. Elle a été fondée par des badistes LGBT+ souhaitant créer un espace où l'on puisse jouer, progresser et porter fièrement les couleurs du rainbow flag dans le paysage fédéral.
-                    </motion.p>
-
-                    <motion.p
-                        className="section-text"
-                        variants={fadeUp}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true }}
-                        custom={1}
-                    >
-                        Dès la première saison 2017/2018, nous étions <strong>75 adhérent·e·s</strong>, de tous niveaux confondus. Aujourd'hui, nous sommes <strong>plus de 160 joueuses et joueurs</strong> à représenter l'ASBG !
+                        Créée le <strong>14 mars 2017</strong>, l'Association Sportive des Badistes Givrés (ASBG) est une association <strong>LGBT+ de badminton</strong>, affiliée à la <strong>Fédération Française de Badminton (FFBaD)</strong>. Elle a été fondée par des badistes LGBT+ souhaitant créer un espace où l'on puisse jouer, progresser et porter fièrement les couleurs du rainbow flag dans le paysage fédéral. Aujourd'hui, nous sommes <strong>plus de 160 joueuses et joueurs</strong> à représenter notre association !
                     </motion.p>
 
                     <motion.p
@@ -86,7 +103,7 @@ const About = () => {
                         viewport={{ once: true }}
                         custom={2}
                     >
-                        🏸 ASBG, c'est un cadre <strong>bienveillant, respectueux et motivant</strong>. Nos terrains sont ouverts à toutes et à tous — peu importe votre genre, votre origine sociale ou la couleur de vos amours.
+                        🏸 ASBG, c'est un cadre <strong>bienveillant, respectueux et motivant</strong>. Nos terrains sont ouverts à toutes et à tous — peu importe votre genre, votre origine sociale ou la couleur de vos amours. Ce qui nous rassemble, ce sont les valeurs fortes que nous défendons.
                     </motion.p>
 
                     {/* VALUES */}
@@ -154,6 +171,45 @@ const About = () => {
                             🌈 Notre objectif est double : créer un <strong>espace sportif inclusif</strong> pour les personnes LGBT+, tout en favorisant l'accès à la <strong>compétition et à la performance</strong> dans un environnement respectueux et bienveillant.
                         </p>
                     </motion.div>
+
+                    {/* ADMINISTRATIVE COUNCIL */}
+                    <motion.h2
+                        className="section-heading"
+                        variants={fadeUp}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                    >
+                        Conseil d'administration
+                    </motion.h2>
+                    <motion.p
+                        className="section-text"
+                        variants={fadeUp}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        custom={0.5}
+                    >
+                        <strong>Élu par les membres </strong> lors de l’Assemblée Générale chaque année, le CA travaille de manière <strong>collégiale</strong> pour faire vivre et grandir le club. 
+                        <br /> Il définit les orientations de l'association, assure la gestion au quotidien et la représente auprès des institutions, clubs partenaires et fédérations.
+                    </motion.p>
+                    <div className="about-council-grid">
+                        {councilMembers.map((member, i) => (
+                            <motion.div
+                                key={i}
+                                className="about-council-card"
+                                variants={fadeUp}
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{ once: true }}
+                                custom={i * 0.1}
+                            >
+                                <img src={member.image} alt={member.name} className="about-council-image" />
+                                <h3>{member.name}</h3>
+                                <p>{member.role}</p>
+                            </motion.div>
+                        ))}
+                    </div>
 
                 </div>
             </section>

@@ -81,15 +81,6 @@ const Inscriptions = () => {
                 >
                     📋 Livret pas à pas — Guide d'inscription
                 </motion.a>
-                <motion.p
-                    className="section-text"
-                    style={{ marginTop: "1rem", color: "#888", fontSize: "0.9rem" }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.6, delay: 0.35 }}
-                >
-                    Suivez notre guide pour vous inscrire étape par étape.
-                </motion.p>
             </section>
 
             {/* INSCRIPTION CARDS */}

@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaBook } from "react-icons/fa";
+import { FaCalendar } from "react-icons/fa";
+import { FaEuroSign } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 
 const Header = () => {
@@ -25,8 +28,6 @@ const Header = () => {
     { name: "Créneaux et gymnases", path: "/creneaux-gymnases" },
     { name: "Formules et tarifs", path: "/formules-tarifs" },
     { name: "S'inscrire", path: "/inscription" },
-    { name: "Evénements", path: "/event-activities" },
-    { name: "Nous contacter", path: "/contact" },
     { name: "Faire un don", path: "/don" },
   ];
 
@@ -83,7 +84,7 @@ const Header = () => {
                       onClick={() => handleNavigate("/creneaux-gymnases")}
                       style={{ display: "flex", alignItems: "center", gap: "8px" }}
                     >
-                      <FaBook size={16} color="#FEEB0A" /> Créneaux et gymnases
+                      <FaCalendar size={16} color="#CDAB00" /> Créneaux et gymnases
                     </motion.p>
 
                     <motion.p
@@ -91,7 +92,7 @@ const Header = () => {
                       onClick={() => handleNavigate("/formules-tarifs")}
                       style={{ display: "flex", alignItems: "center", gap: "8px" }}
                     >
-                      <FaBook size={16} color="#FEEB0A" /> Formules et tarifs
+                      <FaEuroSign size={16} color="#CDAB00" /> Formules et tarifs
                     </motion.p>
 
                     {/* <motion.p
@@ -110,13 +111,18 @@ const Header = () => {
               <Link to="/inscription">S'inscrire</Link>
             </motion.div>
             <motion.div whileHover={{ y: -2 }} className="nav-item">
-              <Link to="/event-activities">Evénements</Link>
-            </motion.div>
-            <motion.div whileHover={{ y: -2 }} className="nav-item">
-              <Link to="/contact">Nous contacter</Link>
-            </motion.div>
-            <motion.div whileHover={{ y: -2 }} className="nav-item">
               <Link to="/don">Faire un don</Link>
+            </motion.div>
+            <motion.div whileHover={{ y: -2 }} className="nav-item">
+              <a
+                href="https://www.instagram.com/asbg75/?hl=fr"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram ASBG"
+                style={{ color: "#f4d70a", display: "inline-flex", alignItems: "center", fontSize: "1.3rem" }}
+              >
+                <FaInstagram />
+              </a>
             </motion.div>
           </nav>
 

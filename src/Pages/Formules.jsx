@@ -22,7 +22,7 @@ const plans = [
         label: "Entraînement avec un professionnel",
         included: true,
         detail:
-          "Groupe 1 : 16 places — mercredis 19h–20h30 (hors vacances scolaires)\nGroupe 2 : 20 places — samedis 12h–13h30 (hors vacances scolaires)\nAu moins 1 entraînement toutes les 3 semaines en début de saison.",
+          "Groupe 1 : 16 places — mercredis 19h–20h30 (hors vacances scolaires)\nGroupe 2 : 20 places — samedis 12h–13h30 (hors vacances scolaires)\nAu moins 1 entraînement garanti toutes les 3 semaines en début de saison.",
       },
       { label: "Accès aux stages encadrés", included: true },
       {
@@ -48,6 +48,7 @@ const plans = [
       },
     ],
     highlight: false,
+    accent: "mint",
   },
 ];
 
@@ -55,21 +56,16 @@ const Formules = () => {
   return (
     <>
       {/* HERO BANNER */}
+
+
       <section className="about-hero">
-        <motion.p
+        <motion.h1
           className="section-subheading"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          Nos formules & tarifs
-        </motion.p>
-        <motion.h1
-          initial={{ opacity: 0, y: 25 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-        >
-          Tarifs 2026 / 2027
+          Nos formules & tarifs - 2026-2027
         </motion.h1>
       </section>
 
@@ -77,22 +73,11 @@ const Formules = () => {
       <section className="pricing-section">
         <div className="pricing-inner">
 
-          <motion.p
-            className="section-text"
-            style={{ textAlign: "center", maxWidth: 600, margin: "0 auto 3rem" }}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            Le paiement via le dispositif <strong>Pass'Sport</strong> est accepté.
-          </motion.p>
-
           <div className="pricing-cards">
             {plans.map((plan, i) => (
               <motion.div
                 key={i}
-                className={`pricing-card ${plan.highlight ? "pricing-card--highlight" : ""}`}
+                className={`pricing-card ${plan.highlight ? "pricing-card--highlight" : ""} ${plan.accent === "mint" ? "pricing-card--mint" : ""}`.trim()}
                 variants={fadeUp}
                 initial="hidden"
                 whileInView="visible"
@@ -118,6 +103,18 @@ const Formules = () => {
               </motion.div>
             ))}
           </div>
+
+          <motion.p
+            className="section-text"
+            style={{ textAlign: "center", maxWidth: 600, margin: "0 auto 3rem" }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <br />
+            Le paiement via le dispositif <strong>Pass'Sport</strong> est accepté.
+          </motion.p>
 
         </div>
       </section>

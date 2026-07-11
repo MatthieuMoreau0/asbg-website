@@ -10,7 +10,6 @@ import Creneaux from './Pages/Creneaux';
 import Formules from './Pages/Formules';
 import Inscriptions from './Pages/Inscriptions';
 import Testimonial from './Pages/Testimonial';
-import EventActivities from './Pages/EventActivities';
 import Contact from './Pages/Contact';
 import Donation from './Pages/Donation';
 import PrivacyPolicy from './Pages/PrivacyPolicy';
@@ -29,7 +28,6 @@ function App() {
           <Route path="/formules-tarifs" element={<Formules />} />
           <Route path="/inscription" element={<Inscriptions />} />
           <Route path="/testimonials" element={<Testimonial />} />
-          <Route path="/event-activities" element={<EventActivities />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/don" element={<Donation />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

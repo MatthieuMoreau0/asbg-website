@@ -25,10 +25,15 @@ const metroSvg = {
 const metroColors = {
 };
 
+const categories = [
+    { key: "entrainement", label: "Entraînement" },
+    { key: "jeu-libre", label: "Jeu libre" },
+];
+
 const gymnases = [
     {
         name: "Gymnase Patriarches",
-        activite: "Entraînement — Groupe 1",
+        activite: "Entraînement — Intermédiaire & Avancé",
         horaire: "Mercredi de 19h à 20h30",
         metro: [{ line: "7", station: "Censier-Daubenton" }],
         tags: ["entrainement"],
@@ -42,14 +47,14 @@ const gymnases = [
     },
     {
         name: "Gymnase Château des Rentiers",
-        activite: "Entraînement — Groupe 2",
+        activite: "Entraînement — Débutant & Intermédiaire",
         horaire: "Samedi de 12h à 13h30",
         metro: [{ line: "6", station: "Nationale" }],
         tags: ["entrainement"],
     },
     {
         name: "Gymnase Buffon",
-        activite: "Jeu libre",
+        activite: "Jeu libre & Interclubs",
         horaire: "Dimanche de 9h30 à 13h",
         metro: [
             { line: "5", station: "Gare d'Austerlitz" },
@@ -70,29 +75,17 @@ const gymnases = [
     },
 ];
 
-const tagLabels = {
-    "entrainement": { label: "Entraînement", color: "#008ACD" },
-    "jeu-libre": { label: "Jeu libre", color: "#7D71B2" },
-    "interclubs": { label: "Interclubs", color: "#FEEB0A" },
-};
-
 const Creneaux = () => {
     return (
         <>
             {/* HERO */}
+
             <section className="about-hero">
-                <motion.p
+                <motion.h1
                     className="section-subheading"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
-                >
-                    Infos pratiques
-                </motion.p>
-                <motion.h1
-                    initial={{ opacity: 0, y: 25 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.1 }}
                 >
                     Nos créneaux & gymnases
                 </motion.h1>
@@ -101,74 +94,79 @@ const Creneaux = () => {
             {/* CARDS */}
             <section className="pricing-section">
                 <div className="pricing-inner" style={{ maxWidth: 1000 }}>
-                    <div className="creneaux-grid">
-                        {gymnases.map((g, i) => (
-                            <motion.div
-                                key={i}
-                                className="creneau-card"
-                                variants={fadeUp}
-                                initial="hidden"
-                                whileInView="visible"
-                                viewport={{ once: true }}
-                                custom={i}
-                                whileHover={{ y: -6, boxShadow: "0 18px 40px rgba(0,0,0,0.10)" }}
-                            >
-                                {/* Tags */}
-                                <div className="creneau-tags">
-                                    {g.tags.map((t) => (
-                                        <span
-                                            key={t}
-                                            className="creneau-tag"
-                                            style={{ background: tagLabels[t].color }}
+                    {categories.map((category) => {
+                        const categoryGymnases = gymnases.filter((g) => g.tags.includes(category.key));
+                        if (!categoryGymnases.length) return null;
+
+                        return (
+                            <div key={category.key} style={{ marginBottom: "3rem" }}>
+                                <motion.div
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ duration: 0.5 }}
+                                >
+                                    <h2 className="section-heading">{category.label}</h2>
+                                </motion.div>
+
+                                <div className="creneaux-grid">
+                                    {categoryGymnases.map((g, i) => (
+                                        <motion.div
+                                            key={`${category.key}-${i}`}
+                                            className="creneau-card"
+                                            variants={fadeUp}
+                                            initial="hidden"
+                                            whileInView="visible"
+                                            viewport={{ once: true }}
+                                            custom={i}
+                                            whileHover={{ y: -6, boxShadow: "0 18px 40px rgba(0,0,0,0.10)" }}
                                         >
-                                            {tagLabels[t].label}
-                                        </span>
+                                            <h3>{g.name}</h3>
+
+                                            <div className="creneau-row">
+                                                <span className="creneau-label">Activité</span>
+                                                <span>{g.activite}</span>
+                                            </div>
+
+                                            <div className="creneau-row">
+                                                <span className="creneau-label">Horaire</span>
+                                                <span style={{ whiteSpace: "pre-line" }}>{g.horaire}</span>
+                                            </div>
+
+                                            <div className="creneau-row">
+                                                <span className="creneau-label">Accès</span>
+                                                <div className="creneau-metro">
+                                                    {g.metro.map((m, j) => {
+                                                        const svgFile = metroSvg[m.line];
+                                                        return (
+                                                            <span key={j} className="metro-badge">
+                                                                {svgFile ? (
+                                                                    <img
+                                                                        src={`${process.env.PUBLIC_URL}/${svgFile}.svg`}
+                                                                        alt={`Ligne ${m.line}`}
+                                                                        className="metro-svg"
+                                                                    />
+                                                                ) : (
+                                                                    <span
+                                                                        className="metro-line"
+                                                                        style={{ background: metroColors[m.line] || "#444" }}
+                                                                    >
+                                                                        <span className="metro-prefix">M</span>
+                                                                        {m.line}
+                                                                    </span>
+                                                                )}
+                                                                {m.station}
+                                                            </span>
+                                                        );
+                                                    })}
+                                                </div>
+                                            </div>
+                                        </motion.div>
                                     ))}
                                 </div>
-
-                                <h3>{g.name}</h3>
-
-                                <div className="creneau-row">
-                                    <span className="creneau-label">Activité</span>
-                                    <span>{g.activite}</span>
-                                </div>
-
-                                <div className="creneau-row">
-                                    <span className="creneau-label">Horaire</span>
-                                    <span style={{ whiteSpace: "pre-line" }}>{g.horaire}</span>
-                                </div>
-
-                                <div className="creneau-row">
-                                    <span className="creneau-label">Accès</span>
-                                    <div className="creneau-metro">
-                                        {g.metro.map((m, j) => {
-                                            const svgFile = metroSvg[m.line];
-                                            return (
-                                                <span key={j} className="metro-badge">
-                                                    {svgFile ? (
-                                                        <img
-                                                            src={`${process.env.PUBLIC_URL}/${svgFile}.svg`}
-                                                            alt={`Ligne ${m.line}`}
-                                                            className="metro-svg"
-                                                        />
-                                                    ) : (
-                                                        <span
-                                                            className="metro-line"
-                                                            style={{ background: metroColors[m.line] || "#444" }}
-                                                        >
-                                                            <span className="metro-prefix">M</span>
-                                                            {m.line}
-                                                        </span>
-                                                    )}
-                                                    {m.station}
-                                                </span>
-                                            );
-                                        })}
-                                    </div>
-                                </div>
-                            </motion.div>
-                        ))}
-                    </div>
+                            </div>
+                        );
+                    })}
                 </div>
             </section>
 
