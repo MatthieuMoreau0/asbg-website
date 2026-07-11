@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { FiMail, FiMapPin } from "react-icons/fi";
-import { FaFacebookF, FaYoutube, FaInstagram } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
+import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   const menuItems = [
