@@ -4,11 +4,8 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 /**COMPONENTS IMPORT */
-import Information from "../Components/Information";
-
 
 /**IMAGES IMPORT */
-import WelcomeImg from '../Images/asbg4.avif';
 import heroImg from "../Images/asbg5.jpg";
 import galleryImg1 from "../Images/asbg1.avif";
 import galleryImg2 from "../Images/blackminton.jpg";

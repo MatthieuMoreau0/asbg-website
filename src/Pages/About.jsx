@@ -1,10 +1,6 @@
 /**CORE LIBRARIES IMPORT */
 import React from "react";
 import { motion } from "framer-motion";
-import asbg1 from "../Images/asbg1.avif";
-import asbg2 from "../Images/asbg2.avif";
-import asbg3 from "../Images/asbg3.avif";
-import asbg4 from "../Images/asbg4.avif";
 
 import peng from "../Images/Peng.jpg";
 import caro from "../Images/Caro.jpg";

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaBook } from "react-icons/fa";
 import { FaCalendar } from "react-icons/fa";
 import { FaEuroSign } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
