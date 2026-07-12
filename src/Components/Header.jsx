@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FaCalendar } from "react-icons/fa";
 import { FaEuroSign } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import asbgWhiteLogo from "../Images/asbg-white.png";
 
 
 const Header = () => {
@@ -38,7 +39,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/">
             <motion.img
-              src={`${process.env.PUBLIC_URL}/asbg_logo.png`}
+              src={asbgWhiteLogo}
               alt="ASBG Logo"
               className="logo"
               whileHover={{ scale: 1.05 }}
@@ -146,7 +147,7 @@ const Header = () => {
             >
               <Link to="/">
                 <motion.img
-                  src={`${process.env.PUBLIC_URL}/asbg_logo.png`}
+                  src={asbgWhiteLogo}
                   alt="ASBG Logo"
                   className="logo"
                   whileHover={{ scale: 1.05 }}

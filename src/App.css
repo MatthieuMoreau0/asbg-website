@@ -37,7 +37,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #A8BECD;
+  background: #0f2742;
   z-index: 1000;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
   font-family: var(--montserrat-font);
@@ -76,7 +76,7 @@ body {
   border: none;
   font-size: 16px;
   cursor: pointer;
-  color: black;
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-family: var(--montserrat-font);
@@ -86,7 +86,7 @@ body {
 .nav-links button {
   font-size: 16px;
   cursor: pointer;
-  color: black;
+  color: #fff;
   text-transform: uppercase;
   font-family: var(--montserrat-font);
 }

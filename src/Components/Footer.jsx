@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FiMail } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa";
+import asbgWhiteLogo from "../Images/asbg-white.png";
 
 const Footer = () => {
   const menuItems = [
@@ -27,7 +28,7 @@ const Footer = () => {
           transition={{ duration: 0.8 }}
         >
           <motion.img
-            src={`${process.env.PUBLIC_URL}/asbg_logo.png`}
+            src={asbgWhiteLogo}
             alt="ASBG Logo"
             className="logo"
             whileHover={{ scale: 1.05 }}
