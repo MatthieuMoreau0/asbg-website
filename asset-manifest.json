@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/asbg-website/static/css/main.34160fc4.css",
-    "main.js": "/asbg-website/static/js/main.c761ab36.js",
+    "main.css": "/asbg-website/static/css/main.4a4b692b.css",
+    "main.js": "/asbg-website/static/js/main.741daa5c.js",
     "static/js/453.626c803f.chunk.js": "/asbg-website/static/js/453.626c803f.chunk.js",
-    "static/media/Jeanne.jpg": "/asbg-website/static/media/Jeanne.d28b173d5cab302197a9.jpg",
-    "static/media/Flo.jpg": "/asbg-website/static/media/Flo.20209bb1bac1b7140465.jpg",
-    "static/media/Jordan.jpg": "/asbg-website/static/media/Jordan.e8830abb186549682e2a.jpg",
-    "static/media/Hyacinthe.jpg": "/asbg-website/static/media/Hyacinthe.71cedc68b9774818b129.jpg",
-    "static/media/Matthieu.jpg": "/asbg-website/static/media/Matthieu.8ab3106dc197ce00389f.jpg",
-    "static/media/Raph.jpg": "/asbg-website/static/media/Raph.165719cd9af3caa36496.jpg",
-    "static/media/Caro.jpg": "/asbg-website/static/media/Caro.31010af3ab84a5b9c156.jpg",
-    "static/media/Peng.jpg": "/asbg-website/static/media/Peng.5874319ce2970f9bae8d.jpg",
-    "static/media/Melanie.jpg": "/asbg-website/static/media/Melanie.ecbcdddf601ee5708c66.jpg",
-    "static/media/Myriam.jpg": "/asbg-website/static/media/Myriam.f8463918340ef42b95da.jpg",
-    "static/media/Didier.png": "/asbg-website/static/media/Didier.de1931e0b6f218ed2a07.png",
-    "static/media/Dara.png": "/asbg-website/static/media/Dara.5b31cc0c72f302bf7e85.png",
+    "static/media/Jordan.jpg": "/asbg-website/static/media/Jordan.3ec4cd2cd83a3d5f68cc.jpg",
+    "static/media/Hyacinthe.jpg": "/asbg-website/static/media/Hyacinthe.10ca731a002bc26e35f1.jpg",
+    "static/media/Flo.jpg": "/asbg-website/static/media/Flo.039a2fdff00c2fc8d636.jpg",
+    "static/media/Jeanne.jpg": "/asbg-website/static/media/Jeanne.89b686ef2bb2ab4af1d6.jpg",
+    "static/media/Didier.png": "/asbg-website/static/media/Didier.cebcdfa06f8448ccfa07.png",
+    "static/media/Dara.png": "/asbg-website/static/media/Dara.988eda3c4275a4fbd27e.png",
+    "static/media/Raph.jpg": "/asbg-website/static/media/Raph.5f7f0af811479a599506.jpg",
+    "static/media/Melanie.jpg": "/asbg-website/static/media/Melanie.fff78283b3b51d205e3e.jpg",
+    "static/media/Matthieu.jpg": "/asbg-website/static/media/Matthieu.11d96c7ff759cdf1ede1.jpg",
+    "static/media/Caro.jpg": "/asbg-website/static/media/Caro.591281f7853495ffe5fa.jpg",
+    "static/media/Myriam.jpg": "/asbg-website/static/media/Myriam.556a58c56969afe672a6.jpg",
+    "static/media/Peng.jpg": "/asbg-website/static/media/Peng.33c9ee2f48a0d73198c1.jpg",
     "static/media/finAnnee.jpg": "/asbg-website/static/media/finAnnee.81f87076c2484a739a32.jpg",
     "static/media/blackminton.jpg": "/asbg-website/static/media/blackminton.442ed5649f766512bca3.jpg",
     "static/media/asbg5.jpg": "/asbg-website/static/media/asbg5.aa8d1e86ff99e9226aae.jpg",
@@ -119,12 +119,12 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/asbg-website/static/media/roboto-greek-ext-700-normal.28728bc8c64fa1bfd905.woff",
     "static/media/roboto-greek-ext-300-normal.woff": "/asbg-website/static/media/roboto-greek-ext-300-normal.f9bcba068dd8c29805b0.woff",
     "index.html": "/asbg-website/index.html",
-    "main.34160fc4.css.map": "/asbg-website/static/css/main.34160fc4.css.map",
-    "main.c761ab36.js.map": "/asbg-website/static/js/main.c761ab36.js.map",
+    "main.4a4b692b.css.map": "/asbg-website/static/css/main.4a4b692b.css.map",
+    "main.741daa5c.js.map": "/asbg-website/static/js/main.741daa5c.js.map",
     "453.626c803f.chunk.js.map": "/asbg-website/static/js/453.626c803f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.34160fc4.css",
-    "static/js/main.c761ab36.js"
+    "static/css/main.4a4b692b.css",
+    "static/js/main.741daa5c.js"
   ]
 }
