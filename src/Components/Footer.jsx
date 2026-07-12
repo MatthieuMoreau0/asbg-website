@@ -86,9 +86,9 @@ const Footer = () => {
         >
           <h3>Contact</h3>
           <ul className="footer-contact">
-            <a href="mailto:contact@asbg75.com">
+            <a href="mailto:bureau.asbg@gmail.com">
               <li>
-                <FiMail /> contact@asbg75.com
+                <FiMail /> bureau.asbg@gmail.com
               </li>
             </a>
             <a
