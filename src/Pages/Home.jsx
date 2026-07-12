@@ -7,10 +7,10 @@ import { motion } from "framer-motion";
 
 /**IMAGES IMPORT */
 import heroImg from "../Images/asbg5.jpg";
-import galleryImg1 from "../Images/asbg1.avif";
+import galleryImg1 from "../Images/etoileIC.jpg";
 import galleryImg2 from "../Images/blackminton.jpg";
-import galleryImg3 from "../Images/asbg3.avif";
-import galleryImg4 from "../Images/finAnnee.jpg";
+import galleryImg3 from "../Images/finAnnee.jpg";
+import galleryImg4 from "../Images/miroirIC.jpg";
 
 
 /**DATA IMPORT */
