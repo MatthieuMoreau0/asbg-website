@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/asbg-website/static/css/main.4a4b692b.css",
-    "main.js": "/asbg-website/static/js/main.741daa5c.js",
+    "main.css": "/asbg-website/static/css/main.1fe898d5.css",
+    "main.js": "/asbg-website/static/js/main.a6ed39ba.js",
     "static/js/453.626c803f.chunk.js": "/asbg-website/static/js/453.626c803f.chunk.js",
     "static/media/Jordan.jpg": "/asbg-website/static/media/Jordan.3ec4cd2cd83a3d5f68cc.jpg",
     "static/media/Hyacinthe.jpg": "/asbg-website/static/media/Hyacinthe.10ca731a002bc26e35f1.jpg",
@@ -15,12 +15,14 @@
     "static/media/Caro.jpg": "/asbg-website/static/media/Caro.591281f7853495ffe5fa.jpg",
     "static/media/Myriam.jpg": "/asbg-website/static/media/Myriam.556a58c56969afe672a6.jpg",
     "static/media/Peng.jpg": "/asbg-website/static/media/Peng.33c9ee2f48a0d73198c1.jpg",
+    "static/media/miroirIC.jpg": "/asbg-website/static/media/miroirIC.93918fd028e3e2e16bd4.jpg",
     "static/media/finAnnee.jpg": "/asbg-website/static/media/finAnnee.81f87076c2484a739a32.jpg",
     "static/media/blackminton.jpg": "/asbg-website/static/media/blackminton.442ed5649f766512bca3.jpg",
+    "static/media/etoileIC.jpg": "/asbg-website/static/media/etoileIC.976d5665d85a2c620304.jpg",
     "static/media/asbg5.jpg": "/asbg-website/static/media/asbg5.aa8d1e86ff99e9226aae.jpg",
     "static/media/asbg2.avif": "/asbg-website/static/media/asbg2.dfe6c8e8051869c8a94e.avif",
-    "static/media/asbg3.avif": "/asbg-website/static/media/asbg3.fb746939fbab8094142b.avif",
     "static/media/asbg6.jpg": "/asbg-website/static/media/asbg6.00392a340013a4c5e504.jpg",
+    "static/media/asbg-white.png": "/asbg-website/static/media/asbg-white.ae4bee3ae21e2a22055f.png",
     "static/media/baloo-2-devanagari-600-normal.woff": "/asbg-website/static/media/baloo-2-devanagari-600-normal.8136a686fd0738896d70.woff",
     "static/media/baloo-2-devanagari-700-normal.woff": "/asbg-website/static/media/baloo-2-devanagari-700-normal.77663bb96e19bf59dc25.woff",
     "static/media/baloo-2-devanagari-400-normal.woff": "/asbg-website/static/media/baloo-2-devanagari-400-normal.c7af1fc60b1ee5a9ffc6.woff",
@@ -119,12 +121,12 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/asbg-website/static/media/roboto-greek-ext-700-normal.28728bc8c64fa1bfd905.woff",
     "static/media/roboto-greek-ext-300-normal.woff": "/asbg-website/static/media/roboto-greek-ext-300-normal.f9bcba068dd8c29805b0.woff",
     "index.html": "/asbg-website/index.html",
-    "main.4a4b692b.css.map": "/asbg-website/static/css/main.4a4b692b.css.map",
-    "main.741daa5c.js.map": "/asbg-website/static/js/main.741daa5c.js.map",
+    "main.1fe898d5.css.map": "/asbg-website/static/css/main.1fe898d5.css.map",
+    "main.a6ed39ba.js.map": "/asbg-website/static/js/main.a6ed39ba.js.map",
     "453.626c803f.chunk.js.map": "/asbg-website/static/js/453.626c803f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a4b692b.css",
-    "static/js/main.741daa5c.js"
+    "static/css/main.1fe898d5.css",
+    "static/js/main.a6ed39ba.js"
   ]
 }
