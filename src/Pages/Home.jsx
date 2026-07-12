@@ -45,7 +45,7 @@ const Home = () => {
             transition={{ duration: 1.2, ease: "easeOut" }}
           >
             <h1>
-              <span>ASBG</span> — Badminton inclusif,<br />engagé & compétitif 🏸
+              <span>ASBG</span> <br /> Badminton inclusif, engagé & compétitif 🏸
             </h1>
             <p>
               Association LGBT+ de badminton parisienne, affiliée à la FFBaD depuis 2017, ASBG rassemble aujourd'hui plus de 160 membres autour d'une passion commune : le badminton.
@@ -120,7 +120,7 @@ const Home = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            L'ASBG c'est un projet sportif ambitieux dans un cadre inclusif et chaleureux. Ici, tout le monde trouve sa place — que vous visiez le podium ou simplement une bonne suée entre amis.
+            L'ASBG c'est un projet sportif ambitieux dans un cadre inclusif et chaleureux. <br /> Tout le monde trouve sa place, que vous visiez le podium ou simplement une bonne suée entre amis.
           </motion.p>
 
           {/* CARDS */}

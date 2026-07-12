@@ -125,7 +125,16 @@ const Creneaux = () => {
 
                                             <div className="creneau-row">
                                                 <span className="creneau-label">Activité</span>
-                                                <span>{g.activite}</span>
+                                                <span
+                                                    className={
+                                                        g.activite === "Entraînement — Intermédiaire & Avancé" ||
+                                                        g.activite === "Entraînement — Débutant & Intermédiaire"
+                                                            ? "creneau-activity-text"
+                                                            : ""
+                                                    }
+                                                >
+                                                    {g.activite}
+                                                </span>
                                             </div>
 
                                             <div className="creneau-row">

@@ -26,6 +26,11 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
   background-color: #fff;
+  text-align: justify;
+}
+
+.hero-content h1 {
+  text-align: left;
 }
 
 .site-header {
@@ -1072,6 +1077,11 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: #aaa;
+}
+
+.creneau-activity-text {
+  display: block;
+  text-align: left;
 }
 
 .creneau-metro {
